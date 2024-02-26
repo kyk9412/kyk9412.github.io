@@ -232,8 +232,7 @@ header .inner .side_menu .button .search::before {
 	height: 2px;
 	background: #f06eaa;
 }
-/* [1번] START */
-/* 스크롤 할 때 적용할 스타일(.active)과 :hover 스타일이 같으므로 공통 css로 정리. */
+
 header.active,
 header:hover {
 	background: #f986bd;
@@ -254,15 +253,11 @@ header:hover .gnb .menu .menu_list > a,
 header.active .gnb .menu .menu_list > a {
 	color: #fff;
 }
-/* [2번] START */
-/* a:hover일 경우 a 영역을 벗어나면 css 스타일이 적용이 안됨. */
-/* 따라서 [2번]을 하고 싶으시면 a 상위 div인 .menu_list에 hover 스타일을 줘야함. */
-/* 이 경우 .menu_list:hover는 a:hover와 .sub_menu 구성요소들:hover 모두 커버해줄 수 있기 때문.   */
+
 header:hover .gnb .menu .menu_list:hover > a,
 header.active .gnb .menu .menu_list:hover > a {
 	color: #000;
 }
-/* [2번] END */
 
 header:hover .inner .side_menu .button .search img,
 header.active .inner .side_menu .button .search img {
@@ -302,7 +297,6 @@ header.active .inner .side_menu .button .search::before {
 	height: 2px;
 	background: #fff;
 }
-/* [1번] END */
 
 .main {
 }
@@ -638,87 +632,6 @@ header.active .inner .side_menu .button .search::before {
 	background: #ecdbd4;
 	border-radius: 25px;
 }
-/*
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box
-	.new_title {
-	color: #f7a7bf;
-}
-
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box
-	.button {
-	background: #f7a7bf;
-}
-
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(2)
-	.new_title {
-	color: #ecc562;
-}
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(2)
-	.button {
-	background: #ecc562;
-}
-
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(3)
-	.new_title,
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(4)
-	.new_title {
-	color: #81583c;
-}
-
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(3)
-	.button,
-.New_Item
-	.container
-	.BR_items
-	.swiper-slide:nth-of-type(2)
-	.item
-	.item_box
-	.new_box:nth-of-type(4)
-	.button {
-	background: #ede0d4;
-} */
 
 .New_Item .container .item .new_box .new_title {
 	font: 23px "Pretend_B", sans-serif;
@@ -791,21 +704,6 @@ header.active .inner .side_menu .button .search::before {
 .BR_Play .container .be-play_list .play_item .list_item2 {
 	margin-right: 0;
 }
-
-/* @keyframes slide-up {
-	0% {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.BR_Play .container .be-play_list .play_item .list_item1 img {
-	animation: slide-up 0.5s 0.75s 1 backwards;
-} */
 
 .Be_Better {
 }
@@ -1141,8 +1039,7 @@ footer .container .footer_side_menu .site_footer_sns .ft_sns .sns_list img {
 	background: #fff;
 	overflow-y: hidden;
 	position: relative;
-
-	z-index: 5; /* [4번] 버튼이 family_site_list에 가려지지 않기 위한 css */
+	z-index: 5;
 }
 .footer_side_menu .site_footer_sns .family_site .family_site_btn::after {
 	font-family: "fontawesome";
@@ -1172,9 +1069,8 @@ footer .container .site_footer_info .family_site_list li:hover {
 }
 footer .container .site_footer_info .family_site .family_site_list.on {
 	display: block;
-	bottom: 0; /* 패밀리 사이트 버튼 위로 리스트 펼치기 위한 css */
-	width: 100%; /* 패밀리 사이트 버튼 너비만큼 리스트 너비 채우는 css */
-	height: auto; /* 0 이었던 높이 늘리는 css */
+	bottom: 0;
+	height: auto;
 	padding: 5px 0 40px;
 	max-height: 420px;
 	transition: max-height 0.3s ease;
