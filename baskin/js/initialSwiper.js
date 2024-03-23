@@ -52,7 +52,7 @@ const eventSwiper = new Swiper(".main_promotion", {
 });
 
 const itemSwiper = new Swiper(".BR_items", {
-	// autoplay: true,
+	autoplay: true,
 	autoplaySpeed: 2000,
 	speed: 1500,
 	direction: "horizontal",
@@ -62,19 +62,38 @@ const itemSwiper = new Swiper(".BR_items", {
 	// },
 });
 
-const benefitSwiper = new Swiper(".BR_Benefit_contents", {
-	// autoplay: true,
+const itemSwiper2 = new Swiper(".BR_items_m", {
+	autoplay: true,
 	autoplaySpeed: 2000,
 	speed: 2000,
 	direction: "horizontal",
 	loop: true,
-	slidesPerView: 5,
+	slidesPerView: 2,
+	spaceBetween: 20,
+	breakpoints: {
+		320: {
+			slidesPerView: 1.8,
+		},
+		375: {
+			slidesPerView: 2.3,
+		},
+	},
 });
 
-// const brplay = document.querySelectorAll(".list_item1");
-
-// // brplay.scrollTop = () => {
-// // 	brplay.scrollTop = "";
-// // };
-
-// gsap.registerPlugin(ScrollTrigger);
+const benefitSwiper = new Swiper(".BR_Benefit_contents", {
+	autoplay: true,
+	autoplaySpeed: 2000,
+	speed: 1500,
+	direction: "horizontal",
+	loop: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 2.1,
+			spaceBetween: 20,
+		},
+		481: {
+			slidesPerView: 5,
+			spaceBetween: 20,
+		},
+	},
+});
