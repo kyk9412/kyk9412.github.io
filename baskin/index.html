@@ -7,7 +7,8 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="./css/style.css" />
+
+		<link rel="stylesheet" href="css/style.css" />
 		<title>베스킨라빈스</title>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script
@@ -16,10 +17,12 @@
 		></script>
 	</head>
 	<body>
-		<header>
+		<!-- PC 헤더 START -->
+		<header class="pc-header">
 			<div class="header_background"></div>
 			<div class="inner">
 				<nav class="gnb">
+					<div class="bar"></div>
 					<ul class="menu">
 						<li class="menu_list">
 							<a href="#">Menu</a>
@@ -145,96 +148,378 @@
 					</ul>
 				</nav>
 				<h1 class="header_logo">
-					<a href="#"><img src="./img/logo.png" alt="" /></a>
+					<a href="#"><img src="img/logo.png" alt="" /></a>
 				</h1>
 				<div class="side_menu">
 					<ul class="button">
 						<li class="search">
 							<a href="#"
 								><img
-									src="./img/icon/search.png"
+									src="img/icon/search.png"
 									alt="search_button"
 							/></a>
 						</li>
 						<li class="user">
 							<a href="#"
-								><img
-									src="./img/icon/user.png"
-									alt="user_button"
+								><img src="img/icon/user.png" alt="user_button"
 							/></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</header>
+		<!-- PC 헤더 End -->
 
-		<div class="container">
-			<section class="main">
-				<article class="main_slide">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="main_img01">
-								<img
-									src="./img/main/img01.jpg"
-									alt="main_img01"
-								/>
-								<div class="text_box">
-									<ul class="text">
-										<li>다크 초콜릿과</li>
-										<li>초콜릿 무스 아이스크림에</li>
-										<li>초콜릿 청크, 쿠키,</li>
-										<li>브라우니가 가득!</li>
-									</ul>
-								</div>
-							</div>
+		<!-- 모바일 헤더 START -->
+		<header class="mb-header">
+			<div class="mb-header__container">
+				<div class="mb-header__content">
+					<!-- 햄버거 START -->
+					<button type="button" class="mb-header-menu-button">
+						<div class="mb-header-menu-button__container">
+							<span
+								class="mb-header-menu-button__content mb-header-menu-button__open"
+							>
+								<span class="mb-header-menu-button__bar"></span>
+								<span class="mb-header-menu-button__bar"></span>
+								<span class="mb-header-menu-button__bar"></span>
+							</span>
+
+							<span
+								class="mb-header-menu-button__content mb-header-menu-button__close"
+							>
+								<span class="mb-header-menu-button__bar"></span>
+								<span class="mb-header-menu-button__bar"></span>
+							</span>
 						</div>
+					</button>
+					<!-- 햄버거 End -->
 
-						<div class="swiper-slide">
-							<div class="main_img02">
-								<img
-									src="./img/main/img02.jpg"
-									alt="main_img02"
-								/>
-								<div class="text_box">
-									<ul class="text">
-										<li>달콤하게 사르르 녹는</li>
-										<li>블록팩 민트초코봉봉</li>
-										<li>
-											민트초코봉봉을 새로워진 블록팩으로
-										</li>
-										<li>만나보세요!</li>
-									</ul>
-								</div>
-							</div>
+					<!-- 로고 START -->
+					<h1 class="mb-header-logo">
+						<a href="#" class="mb-header-logo__link"></a>
+					</h1>
+					<!-- 로고 End -->
+
+					<div class="mb-header__box">
+						<!-- 검색 버튼 START -->
+						<div class="mb-header__search">
+							<button
+								type="button"
+								class="mb-header__search-button"
+							></button>
 						</div>
+						<!-- 검색 버튼 End -->
+						<!-- 사용자 버튼 START -->
+						<div class="site-user-menu">
+							<a href="#" class="site-user-menu__button"> </a>
+						</div>
+						<!-- 사용자 버튼 End -->
+					</div>
+				</div>
+			</div>
 
-						<div class="swiper-slide">
-							<div class="main_img03">
-								<img
-									src="./img/main/img03.jpg"
-									alt="main_img03"
-								/>
-								<div class="text_box">
-									<ul class="text">
-										<li>알록달록</li>
-										<li>파티 위드 스윗 마카롱</li>
-										<li>
-											알록달록 마카롱이 듬뿍! 먹는 재미가
-											가득!
-										</li>
-										<li>
-											#바닐라 #아몬드봉봉 #초코릿 칩
-											#엄마는외계인
-										</li>
-										<li>#베리베리스트로베리</li>
-									</ul>
+			<div class="site-menus">
+				<div class="site-menus__container">
+					<nav class="site-menu">
+						<ul class="site-menu__list">
+							<li class="site-menu__item">
+								<button type="button" class="site-menu__link">
+									Menu
+								</button>
+
+								<div class="site-menu-list">
+									<div class="site-menu-list__container">
+										<div class="site-menu-list__content">
+											<ul class="site-menu-list__list">
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>이달의 맛</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>아이스크림</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>블록팩/레디팩</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>아이스크림 케이크</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>디저트</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>음료</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>커피</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
+							</li>
+							<li class="site-menu__item">
+								<button type="button" class="site-menu__link">
+									BR Play
+								</button>
+
+								<div class="site-menu-list">
+									<div class="site-menu-list__container">
+										<div class="site-menu-list__content">
+											<ul class="site-menu-list__list">
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>프로모션</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>제휴혜택</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>배라광장</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>BR레시피</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>마이플레이버리스트</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="site-menu__item">
+								<button type="button" class="site-menu__link">
+									BR Story
+								</button>
+
+								<div class="site-menu-list">
+									<div class="site-menu-list__container">
+										<div class="site-menu-list__content">
+											<ul class="site-menu-list__list">
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>브랜드 스토리</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>이달의 맛 히스토리</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>Be Better</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="site-menu__item">
+								<button type="button" class="site-menu__link">
+									Delivery/Store
+								</button>
+
+								<div class="site-menu-list">
+									<div class="site-menu-list__container">
+										<div class="site-menu-list__content">
+											<ul class="site-menu-list__list">
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>매장 찾기</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>100flavor
+														플래그십스토어</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>Flow 매장</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>배달주문</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>단체주문</a
+													>
+												</li>
+												<li
+													class="site-menu-list__item"
+												>
+													<a
+														href="#"
+														class="site-menu-list__link"
+														>점포개설문의</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- 모바일 헤더 END -->
+
+		<section class="main">
+			<article class="main_slide">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="main_img01">
+							<img src="img/main/img01.jpg" alt="main_img01" />
+							<div class="text_box">
+								<ul class="text">
+									<li>탕탕 스트로베리</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-				</article>
-			</section>
-		</div>
+
+					<div class="swiper-slide">
+						<div class="main_img02">
+							<img src="img/main/img02.jpg" alt="main_img02" />
+							<div class="text_box">
+								<ul class="text">
+									<li>다크 초콜릿과</li>
+									<li>초콜릿 무스 아이스크림에</li>
+									<li>초콜릿 청크, 쿠키,</li>
+									<li>브라우니가 가득!</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="main_img03">
+							<img src="img/main/img03.jpg" alt="main_img03" />
+							<div class="text_box">
+								<ul class="text">
+									<li>BONJOUR, MACARON</li>
+									<li>알록달록 마카롱이 쏙 쏙!</li>
+									<li>부드러운 마스카포네 아이스크림과</li>
+									<li>마카롱, 초콜릿의 달콤한 만남!</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 
 		<section class="promotion">
 			<div class="container">
@@ -250,13 +535,12 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img01.png"
+											src="img/promotion/img01.png"
 											alt=""
 									/></a>
-									<p class="date">2024-01-26 ~ 2024-01-30</p>
+									<p class="date">상시 운영</p>
 									<p class="text">
-										31데이, 하프갤론 사전예약 시 6,500원
-										OFF!
+										워크샵 by 베스킨라빈스 그랜드 오픈
 									</p>
 								</div>
 							</div>
@@ -267,13 +551,13 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img02.png"
+											src="img/promotion/img02.png"
 											alt=""
 									/></a>
-									<p class="date">2024-01-17 ~ 2024-02-18</p>
+									<p class="date">2024-02-01 ~ 2024-02-26</p>
 									<p class="text">
-										드래곤볼Z, 쿼터 이상 구매 시 럭키드로우
-										참여 가능!
+										2월 이달의 맛, 인스타그램에<br />
+										사진을 올려주세요!
 									</p>
 								</div>
 							</div>
@@ -284,16 +568,14 @@
 								<div class="event">
 									<a href="#">
 										<img
-											src="./img/promotion/img03.png"
+											src="img/promotion/img03.png"
 											alt=""
 										/>
 									</a>
-									<p class="date">
-										2023-12-15 ~ 소진 시 까지
-									</p>
+									<p class="date">2024-02-14 ~ 2024-02-25</p>
 									<p class="text">
-										X-MAS 케이크 구매 시 허그미 조안
-										테디베어 11,900원!
+										발렌타인데이, 롤렛 이벤트 참여 시 <br />
+										최대 더블주니어 FREE!
 									</p>
 								</div>
 							</div>
@@ -304,16 +586,16 @@
 								<div class="event">
 									<a href="#">
 										<img
-											src="./img/promotion/img04.png"
+											src="img/promotion/img04.png"
 											alt=""
 										/>
 									</a>
 									<p class="date">
-										2023-12-01 ~ 소진 시 까지
+										2024-02-13 ~ 소진 시 까지
 									</p>
 									<p class="text">
-										쿼터 이상 구매 시 원더랜드 스노우볼
-										매장판매 9,900원!
+										파인트 이상 구매 시, 크로우캐넌 머그<br />
+										커플세트 26,900원!
 									</p>
 								</div>
 							</div>
@@ -324,15 +606,15 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img05.png"
+											src="img/promotion/img05.png"
 											alt=""
 									/></a>
 									<p class="date">
 										2023-09-04 ~ 소진 시 까지
 									</p>
 									<p class="text">
-										아이스크림 스쿱퍼, 해피앱 스캔 시 3천원
-										OFF!
+										아이스크림 스쿱퍼, 해피앱 스캔 시 <br />
+										3천원 OFF!
 									</p>
 								</div>
 							</div>
@@ -343,14 +625,14 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img06.png"
+											src="img/promotion/img06.png"
 											alt=""
 									/></a>
 									<p class="date">
 										2023-07-03 ~ 소진 시 까지
 									</p>
 									<p class="text">
-										모슈 텀블러 머그 MD 구매 시 베라 3종
+										모슈 텀블러 머그 MD 구매 시 베라 3종<br />
 										쿠폰 증정
 									</p>
 								</div>
@@ -362,7 +644,7 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img07.png"
+											src="img/promotion/img07.png"
 											alt=""
 									/></a>
 									<p class="date">
@@ -380,13 +662,14 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img08.png"
+											src="img/promotion/img08.png"
 											alt=""
 									/></a>
 									<p class="date">상시운영</p>
 									<p class="text">
-										SKT 우주패스, 베스킨라빈스 구독 시 7천원
-										OFF!
+										SKT 우주패스, 베스킨라빈스 구독 시
+										<br />
+										7천원 OFF!
 									</p>
 								</div>
 							</div>
@@ -397,7 +680,7 @@
 								<div class="event">
 									<a href="#"
 										><img
-											src="./img/promotion/img09.png"
+											src="img/promotion/img09.png"
 											alt=""
 									/></a>
 									<p class="date">상시운영</p>
@@ -426,63 +709,67 @@
 						<div class="swiper-slide">
 							<div class="item">
 								<div class="new_box1">
-									<img src="./img/new/img01.png" alt="" />
-									<p class="new_title">바삭한 쫀꾸렛</p>
+									<img src="img/new/img01.png" alt="" />
+									<div class="button brown_button"></div>
+									<p class="new_title">탕탕!스트로베리</p>
 								</div>
 
 								<div class="item_box">
 									<div class="new_box">
 										<div class="new_box2">
 											<img
-												src="./img/new/img02.png"
+												src="img/new/img02.png"
 												alt=""
 											/>
 										</div>
-										<div class="button brown_button"></div>
+										<div class="button orange_button"></div>
 										<p class="new_title">
-											어메이징! 쫀꾸렛<br />
-											케이크
+											파워퍼프걸! 베리 슈퍼<br />
+											파워
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box3">
 											<img
-												src="./img/new/img03.png"
+												src="img/new/img03.png"
 												alt=""
 											/>
 										</div>
-										<div class="button brown_button"></div>
-										<p class="new_title">
-											아이스 바움쿠헨<br />
-											초콜릿
+										<div
+											class="button burgundy_button"
+										></div>
+										<p class="new_title t3">
+											파워퍼프걸 하트<br />
+											스틱바 딸기
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box4">
 											<img
-												src="./img/new/img04.png"
+												src="img/new/img04.png"
 												alt=""
 											/>
 										</div>
-										<div class="button brown_button"></div>
-										<p class="new_title">
-											몽실몽실 초콜릿<br />
-											블라스
+										<div class="button pink_button"></div>
+										<p class="new_title t4">
+											스트로베리 요거트<br />
+											블라스트
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box5">
 											<img
-												src="./img/new/img05.png"
+												src="img/new/img05.png"
 												alt=""
 											/>
 										</div>
-										<div class="button brown_button"></div>
-										<p class="new_title">
-											미니 쿠키 샌드 바닐라
+										<div class="button beige_button"></div>
+										<p class="new_title t5">
+											맥심 스틱바 <br />
+											슈프림골드
 										</p>
 									</div>
 								</div>
@@ -492,79 +779,233 @@
 						<div class="swiper-slide">
 							<div class="item">
 								<div class="new_box6">
-									<img src="./img/new/img06.png" alt="" />
-									<p class="new_title">
-										구수한 누릉지 아이스크림
-									</p>
+									<img src="img/new/img06.png" alt="" />
+									<p class="new_title">팥있는 말차당</p>
 								</div>
 								<div class="item_box">
 									<div class="new_box">
 										<div class="new_box7">
 											<img
-												src="./img/new/img07.png"
+												src="img/new/img07.png"
 												alt=""
 											/>
 										</div>
-										<div class="button pink_button"></div>
-										<p class="new_title">
-											허그미 화이트 퍼피
+										<div
+											class="button hotpink_button"
+										></div>
+										<p class="new_title t7">
+											더 베스트 No.6
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box8">
 											<img
-												src="./img/new/img08.png"
+												src="img/new/img08.png"
 												alt=""
 											/>
 										</div>
-										<div
-											class="button red_brown_button"
-										></div>
-										<p class="new_title">
-											바삭바삭<br />
-											누릉지 쉐이크
+										<div class="button blue_button"></div>
+										<p class="new_title t8">
+											아이스 모찌 민트 초코<br />
+											봉봉
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box9">
 											<img
-												src="./img/new/img09.png"
+												src="img/new/img09.png"
 												alt=""
 											/>
 										</div>
 										<div class="button beige_button"></div>
-										<p class="new_title">
-											다이제 초코 아이스<br />
-											샌드
+										<p class="new_title t9">
+											미니 쿠키 샌드 바닐라
 										</p>
 									</div>
 
 									<div class="new_box">
 										<div class="new_box10">
 											<img
-												src="./img/new/img10.png"
+												src="img/new/img10.png"
 												alt=""
 											/>
 										</div>
 										<div
-											class="button light_yellow_button"
+											class="button light beige_button"
 										></div>
-										<p class="new_title">
-											아이스 모찌 망고
+										<p class="new_title t10">
+											몽실몽실 초콜릿<br />
+											블라스트
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+
+				<div class="BR_items_m">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap01">
+									<img
+										src="img/new/img01.png"
+										alt=""
+										style="
+											height: 241px;
+											width: fit-content;
+										"
+									/>
+								</div>
+								<div class="textwrap textwrap01">
+									<p class="new_title">탕탕!스트로베리</p>
+									<div class="button pink_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap02">
+									<img src="img/new/img02.png" alt="" />
+								</div>
+								<div class="textwrap textwrap02">
+									<p class="new_title">
+										파워퍼프걸! 베리 슈퍼<br />
+										파워
+									</p>
+									<div class="button orange_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap03">
+									<img src="img/new/img03.png" alt="" />
+								</div>
+								<div class="textwrap textwrap03">
+									<p class="new_title">
+										파워퍼프걸 하트<br />
+										스틱바 딸기
+									</p>
+									<div class="button burgundy_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap04">
+									<img src="img/new/img04.png" alt="" />
+								</div>
+								<div class="textwrap textwrap04">
+									<p class="new_title">
+										스트로베리 요거트<br />
+										블라스트
+									</p>
+									<div class="button pink_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap05">
+									<img src="img/new/img05.png" alt="" />
+								</div>
+								<div class="textwrap textwrap05">
+									<p class="new_title">
+										맥심 스틱바<br />
+										슈프림골드
+									</p>
+									<div class="button beige_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap06">
+									<img
+										src="img/new/img06.png"
+										alt=""
+										style="
+											height: 241px;
+											width: fit-content;
+										"
+									/>
+								</div>
+								<div class="textwrap textwrap06">
+									<p class="new_title">팥있는 말차당</p>
+									<div class="button green_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap07">
+									<img src="img/new/img07.png" alt="" />
+								</div>
+								<div class="textwrap textwrap07">
+									<p class="new_title">더 베스트 No.6</p>
+									<div class="button hotpink_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap08">
+									<img src="img/new/img08.png" alt="" />
+								</div>
+								<div class="textwrap textwrap08">
+									<p class="new_title">
+										아이스 모찌 민트 초고<br />
+										봉봉
+									</p>
+									<div class="button blue_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap09">
+									<img src="img/new/img09.png" alt="" />
+								</div>
+								<div class="textwrap textwrap09">
+									<p class="new_title">
+										미니 쿠키 샌드 바닐라
+									</p>
+									<div class="button beige_button"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="item_box">
+								<div class="imgwrap imgwrap10">
+									<img src="img/new/img10.png" alt="" />
+								</div>
+								<div class="textwrap textwrap10">
+									<p class="new_title">
+										몽실몽실 초콜릿<br />
+										블라스트
+									</p>
+									<div class="button beige_button"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!--New_Item End-->
-
 		<section class="BR_Play">
 			<div class="container">
 				<h2>BR Play</h2>
@@ -576,12 +1017,12 @@
 					<div class="play_item">
 						<div class="list_item1">
 							<a href="#"
-								><img src="./img/brplay/img01.png" alt=""
+								><img src="img/brplay/img01.png" alt=""
 							/></a>
 						</div>
 						<div class="list_item2">
 							<a href="#"
-								><img src="./img/brplay/img02.png" alt=""
+								><img src="img/brplay/img02.png" alt=""
 							/></a>
 						</div>
 					</div>
@@ -599,7 +1040,7 @@
 				<div class="Be_Better_contents">
 					<div class="Be_Better_farm">
 						<a href="#"
-							><img src="./img/beBetter/img01.png" alt=""
+							><img src="img/beBetter/img01.png" alt=""
 						/></a>
 						<h3 class="title">핑크팜 캠페인</h3>
 						<p class="text">지역 농가 상생 프로젝트</p>
@@ -609,7 +1050,7 @@
 					</div>
 					<div class="Be_Better_dream">
 						<a href="#"
-							><img src="./img/beBetter/img02.png" alt=""
+							><img src="img/beBetter/img02.png" alt=""
 						/></a>
 						<h3 class="title">핑크드림 캠페인</h3>
 						<p class="text">청소년 자립 지원 프로젝트</p>
@@ -619,7 +1060,7 @@
 					</div>
 					<div class="Be_Better_link">
 						<a href="#"
-							><img src="./img/beBetter/img03.png" alt=""
+							><img src="img/beBetter/img03.png" alt=""
 						/></a>
 						<h3 class="title">핑크링크 캠페인</h3>
 						<p class="text">중소 기업 콜라보 프로젝트</p>
@@ -641,42 +1082,42 @@
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img01.png" alt=""
+									><img src="img/benefit/img01.png" alt=""
 								/></a>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img02.png" alt=""
+									><img src="img/benefit/img02.png" alt=""
 								/></a>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img03.png" alt=""
+									><img src="img/benefit/img03.png" alt=""
 								/></a>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img04.png" alt=""
+									><img src="img/benefit/img04.png" alt=""
 								/></a>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img05.png" alt=""
+									><img src="img/benefit/img05.png" alt=""
 								/></a>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="benefit_box">
 								<a href="#"
-									><img src="./img/benefit/img06.png" alt=""
+									><img src="img/benefit/img06.png" alt=""
 								/></a>
 							</div>
 						</div>
@@ -696,7 +1137,7 @@
 							베스킨라빈스 매장을 찾아보세요
 						</p>
 						<a href="#"
-							><img src="./img/benefit/image01.png" alt=""
+							><img src="img/benefit/image01.png" alt=""
 						/></a>
 					</div>
 					<div class="BR_Way_contents">
@@ -706,7 +1147,7 @@
 							베스킨라빈스의 이야기
 						</p>
 						<a href="#"
-							><img src="./img/benefit/image02.png" alt=""
+							><img src="img/benefit/image02.png" alt=""
 						/></a>
 					</div>
 				</section>
@@ -721,7 +1162,7 @@
 					<li><a href="#">점포개설문의</a></li>
 					<li><a href="#">채용문의</a></li>
 					<li><a href="#">윤리신고센터</a></li>
-					<li><a href="#">베스킨라빈스리워드 이용약관</a></li>
+					<li><a href="#">이용약관</a></li>
 					<li><a href="#">개인정보처리방침</a></li>
 					<li><a href="#">영상정보처리기기운영관리방침</a></li>
 					<li><a href="#">안전보건 경영방침</a></li>
@@ -730,7 +1171,11 @@
 				<div class="site_footer_info">
 					<div class="ft_info">
 						<div class="footer_logo">
-							<img src="./img/footer/footer_logo.png" alt="" />
+							<a href="#"
+								><img
+									src="img/footer/footer_logo.png"
+									alt="footerlogo"
+							/></a>
 						</div>
 
 						<div class="text_box">
@@ -761,19 +1206,19 @@
 								<li class="list_item">
 									<a href="#"
 										><img
-											src="./img/footer/h_market.png"
+											src="img/footer/h_market.png"
 											alt=""
 									/></a>
 									<a href="#"
 										><img
-											src="./img/footer/h_point.png"
+											src="img/footer/h_point.png"
 											alt=""
 									/></a>
 									<a href="#"
-										><img src="./img/footer/spc.png" alt=""
+										><img src="img/footer/spc.png" alt=""
 									/></a>
 									<a href="#"
-										><img src="./img/footer/ksa.png" alt=""
+										><img src="img/footer/ksa.png" alt=""
 									/></a>
 								</li>
 							</ul>
@@ -783,21 +1228,19 @@
 							<div class="ft_sns">
 								<div class="sns_list">
 									<a href="#"
-										><img src="./img/icon/insta.png" alt=""
+										><img src="img/icon/insta.png" alt=""
+									/></a>
+									<a href="#"
+										><img src="img/icon/youtube.png" alt=""
 									/></a>
 									<a href="#"
 										><img
-											src="./img/icon/youtube.png"
+											src="img/icon/facebook.png"
 											alt=""
 									/></a>
 									<a href="#"
 										><img
-											src="./img/icon/facebook.png"
-											alt=""
-									/></a>
-									<a href="#"
-										><img
-											src="./img/icon/magazine.png"
+											src="img/icon/magazine.png"
 											alt=""
 									/></a>
 								</div>
